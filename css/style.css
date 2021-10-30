@@ -1,9 +1,10 @@
 ﻿body {
     font-family: sans-serif;
     width: 1024px;
-    margin: 20px;
+    margin: 0 auto;
+
     display: grid;
-    grid-template-columns: 824PX 200px;
+    grid-template-columns: 800PX 224px;
 }
 
 
@@ -12,48 +13,79 @@
         width: 1024px;
         height: 80px;
         padding: 10px;
+        padding-right:0px;
         grid-column: 1/3;
         border-width: 1px;
         border-color: black;
         border-style: solid;
-
-
-
-
-        display: grid;
-        grid-template-columns: 20% 60% 20%;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
+        /*display: grid;
+        grid-template-columns: 20% 60% 20%;
+         */
     }
+
+
 
     body > header > nav > ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        
+        /*display: grid;
+        grid-template-columns: 1fr 1fr 1fr;*/
     }
 
+.menuitem {
+    list-style:none;
+    padding:41px;
+    background: #ffd800;
+    border-width: 0 1px 0 1px;
+    border-color: black;
+    border-style: solid;
 
-    body > main {
-        background: #00ff90;
-        width: 824px;
+    /*
+    
+    width: 170.6px;
+    
+
+    height: 40px;*/
+
+}
+
+
+.login {
+    background: #ffd800;
+    padding: 41px;
+    border-width: 0 0px 0 1px;
+    border-color: black;
+    border-style: solid;
+  
+}
+
+
+body > main {
+    background: #00ff90;
+    width: 800px;
+    padding: 10px;
+    border-width: 0 1px 0 1px;
+    border-color: black;
+    border-style: solid;
+    border-right-width: 0px;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+    body > main > h2 {
+        background: #00ffff;
+        width: 340px;
         padding: 10px;
+        text-align: center;
         border-width: 1px;
         border-color: black;
         border-style: solid;
-        border-right-width: 0px;
-        grid-column: 1/2;
-        display: grid;
-        grid-template-columns: 50% 50%;
-   
+        grid-column: 1/3;
     }
-
-        body > main > h2 {
-            background: #00ffff;
-            width: 350px;
-            padding: 10px;
-            border-width: 1px;
-            border-color: black;
-            border-style: solid;
-            grid-column: 1/3;
-        }
 
         body > main > p{
             background: #00ffff;
@@ -88,22 +120,76 @@
 
 
 
-    body > aside {
+body > aside {
+    grid-column: 2/3;
+    background: #00a1ff;
+    width: 224px;
+    padding: 10px;
+    padding-right: 0px;
+    border-width: 0 1px 0 1px;
+    border-color: black;
+    border-style: solid;
+}
 
+footer {
+    background: #1fa865;
+    width: 1024px;
+    padding: 10px;
+    padding-right: 0px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+/*login page edits*/
+
+.uppercase {
+    text-transform:uppercase;
+}
+
+.loginpage-main {
+    grid-column: 1/3;
+    width: 1014px;
+    border-width: 0 1px 0;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+
+    .loginpage-main > h2 {
         grid-column: 2/3;
+    
+    }
+
+    .loginpage-main > form {
+        border-radius: 8px;
+        grid-column: 2/3;
+        
         background: #00ffff;
-        width: 201px;
+        width: 340px;
         padding: 10px;
         border-width: 1px;
         border-color: black;
         border-style: solid;
     }
 
-footer {
-    background: #1fa865;
-    width: 1024px;
-    padding: 10px;
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
+
+.login-page-footer {
+  
+
 }
+
+input {
+    border: 2px solid black;
+    border-radius: 4px;
+ 
+}
+
+    input[type=text]:focus {
+        background-color: lightblue;
+    }
+
+    input[type=password]:focus {
+        background-color: lightblue;
+    }

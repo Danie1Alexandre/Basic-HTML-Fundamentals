@@ -4,29 +4,35 @@
 <head>
     <meta charset="utf-8" />
     <title>Login page</title>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body >
     <header>
-        <h1>Logo</h1>
+        <h1 class="uppercase">Logo</h1>
         <nav>
             <ul>
-                <li><a href="https://www.google.se/" target="_blank">Link</a></li>
-                <li><a href="https://www.google.se/" target="_blank">Link</a></li>
-                <li><a href="https://www.google.se/" target="_blank">Link</a></li>
+                <li class="menuitem"><a href="https://www.google.se/" target="_blank">Link</a></li>
+                <li class="menuitem"><a href="https://www.google.se/" target="_blank">Link</a></li>
+                <li class="menuitem"><a href="https://www.google.se/" target="_blank">Link</a></li>
             </ul>
         </nav>
-        <a href="index.html">Home</a>
+        <a class="login" href="index.html">Home</a>
     </header>
-    <main>
+    <main class="loginpage-main">
         <h2>User Login</h2>
         <form action="form">
-            <input type="text" />
-            <input type="password" />
+            <label for="name">Name</label>
+            <br />
+            <input type="text" placeholder="User name"/> 
+            <br />
+            <label for="pasword">Password</label>
+            <br />
+            <input type="password" placeholder="password"/>
             <button>reset</button>
             <button>sign in</button>
         </form>
     </main>
-    <footer>
+    <footer class="login-page-footer">
         <span>&#169; Daniel Alexandre </span>
     </footer>
 </body>
